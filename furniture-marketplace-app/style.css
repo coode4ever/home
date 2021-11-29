@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --bg: #e4eefb;
+  --primary: #030a4e;
+  --secondary: #f3f3f3;
+  --black: #000000;
+  --white: #ffffff;
+  --accent: #8ea0b9;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Overpass", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Style the mobile layout */
+.mobileview {
+  height: 650px;
+  width: 360px;
+  border-radius: 1rem;
+  background-color: var(--white);
+  display: flex;
+  box-shadow: 0 0 10px rgba(142, 160, 185, 0.1);
+  overflow: hidden;
+}
+
+/*Start of common class */
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.flex-justify-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tag {
+  background-color: var(--secondary);
+  border-radius: 40px;
+  padding: 8px 16px;
+}
+
+/* End of common class */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 1.5rem;
+  width: 100%;
+}
+
+.header {
+  flex: 0.2;
+  width: 320px;
+}
+
+.header h1 {
+  color: var(--primary);
+}
+
+.tags-group {
+  margin-top: 6px;
+}
+
+.body {
+  flex: 0.8;
+}
+
+.product-header h2 {
+  font-weight: 400;
+  color: var(--primary);
+}
+
+.product-header a {
+  color: var(--primary);
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.product-container {
+  margin: 18px 0;
+}
+
+.product {
+  margin-right: 14px;
+  height: 200px;
+  background-color: var(--secondary);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 5px;
+  border-radius: 30px;
+  position: relative;
+}
+
+.product img {
+  border-radius: 20px;
+  height: auto;
+  width: 130px;
+}
+
+.product-name {
+  position: absolute;
+  bottom: 10px;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.product-info {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  width: 100px;
+}
+.product-info p {
+  font-size: 18px;
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.product-info ion-icon {
+  font-size: 22px;
+}
+
+.special-banner {
+  position: relative;
+}
+.special-banner img {
+  border-radius: 20px;
+  height: 130px;
+  object-fit: cover;
+  margin: 10px 0;
+  width: 100%;
+}
+.special-info {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  color: var(--white);
+}
+.special-info h3,
+.special-info p {
+  margin: 5px 0;
+}
+.button {
+  background-color: var(--primary);
+  height: 30px;
+  width: 100px;
+  border-radius: 20px;
+}
+
+.button a {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 12px;
+}
+
+.footer {
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu li {
+  text-decoration: none;
+  color: var(--accent);
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.active-menu {
+  background-color: var(--primary);
+  border-radius: 100%;
+  height: 50px;
+  width: 50px;
+  color: var(--white) !important;
+}
